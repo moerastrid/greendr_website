@@ -58,8 +58,8 @@
 	padding: 20px;
 	}
    .footer {
-	display: block;
-	padding: 80px;
+	flex: 100%;
+	padding: 4px;
 	text-align: center;
 	background: DarkGreen;
 	color: LightYellow;
@@ -104,7 +104,7 @@
     <p>Greendr enables you to exchange your get insight in your own needs and in the needs of the peers around you. This enables you to contact them to establish a connection to benefit from each other.</p>
   </div>
   <div class="footer">
-	<h2>Thank you for visiting Greendr</h2>
+	<h5>Thank you for visiting Greendr</h5>
   </div> 
  </div>
  </body>
