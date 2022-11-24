@@ -38,7 +38,7 @@
 	float: right;
 	}
    .navbar a:hover {
-	background-color: Gold;
+	background-color: LightYellow;
 	color: DarkGreen;
 	}
    .row {
@@ -53,7 +53,8 @@
 	}
    .main {
  	flex: 70%;
-	background-color: #a1a1a1;
+	background-color: LightYellow;
+	color: DarkGreen;
 	padding: 20px;
 	}
   @media screen and (max-width: 700px) {
