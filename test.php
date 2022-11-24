@@ -57,6 +57,11 @@
 	color: DarkGreen;
 	padding: 20px;
 	}
+   .footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	}
   @media screen and (max-width: 700px) {
    .row {   
     flex-direction: column;
@@ -96,8 +101,10 @@
     <p>Because different growers use different resources to energize, heat and cool their greenhouses, the highs and lows in energy can differ throughout the year.</p>
     <p>Greendr enables you to exchange your get insight in your own needs and in the needs of the peers around you. This enables you to contact them to establish a connection to benefit from each other.</p>
   </div>
-</div>
-
-  </body>
+  <div class="footer">
+	<h2>Thank you for visiting Greendr</h2>
+  </div> 
+ </div>
+ </body>
 </html>
 
