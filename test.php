@@ -47,7 +47,7 @@
 	}
    .side {
  	flex: 30%;
- 	background-color: #f1f1f1;
+ 	background-color: Gold;
 	color: SeaGreen;
  	padding: 20px;
 	}
@@ -58,9 +58,11 @@
 	padding: 20px;
 	}
    .footer {
-	padding: 20px;
+	display: block;
+	padding: 10px;
 	text-align: center;
-	background: #ddd;
+	background: DarkGreen;
+	color: LightYellow;
 	}
   @media screen and (max-width: 700px) {
    .row {   
