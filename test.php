@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
  <head>
   <title>Greendr</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+  * {
+  box-sizing: border-box;
+	}
    body {
 	font-family: Arial, Helvetica, sans-sarif;
 	}
@@ -49,9 +52,20 @@
 	}
    .main {
  	flex: 70%;
-	background-color: red;
+	background-color: #a1a1a1;
 	padding: 20px;
 	}
+  @media screen and (max-width: 700px) {
+   .row {   
+    flex-direction: column;
+	}
+  @media screen and (max-width: 400px) {
+   .navbar a {
+	float: none;
+        width:100%;
+	}
+}
+}
   </style>
   </head>
   <body>
@@ -67,7 +81,7 @@
    <div class="row">
     <div class="side">
 	<h2>About Greendr</h2>
-	<h5>Greendr is an online matchmaking platform where greenhouse growers can connect with local peers and initiatives to share</h5>
+	<h5>Greendr is an online matchmaking platform where greenhouse growers can connect with local peers and initiatives to share information and solutions about common problems they have encountered like seasonal heating/energy demands. Special emphasis is placed on early adopters of sustainable solutions, who are encouraged to offer tried and tested advice to those who are still unsure, empowering growers to collaborate instead of tackling problems alone</h5>
   </div>
   <div class="main">
     <h2>TITLE HEADING</h2>
