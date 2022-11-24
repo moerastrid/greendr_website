@@ -59,7 +59,7 @@
 	}
    .footer {
 	display: block;
-	padding: 10px;
+	padding: 80px;
 	text-align: center;
 	background: DarkGreen;
 	color: LightYellow;
