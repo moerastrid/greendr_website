@@ -48,7 +48,7 @@
    .side {
  	flex: 30%;
  	background-color: #f1f1f1;
-	color: SeaGreen
+	color: SeaGreen;
  	padding: 20px;
 	}
    .main {
