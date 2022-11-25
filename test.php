@@ -54,14 +54,14 @@
    .main {
  	flex: 70%;
 	background-color: LightYellow;
-	color: DarkGreen;
+	color: SeaGreen;
 	padding: 20px;
 	}
    .footer {
 	flex: 100%;
 	padding: 4px;
 	text-align: center;
-	background: DarkGreen;
+	background: SeaGreen;
 	color: LightYellow;
 	}
   @media screen and (max-width: 700px) {
@@ -99,7 +99,7 @@
     <p>No need to do it all by yourself, collaborating will empower you to make the change to sustainable energy.</p>
     <br>
     <h2>Growing together</h2>
-    <h5>I water you, you water me, we grow together</h5>
+    <h5>I energize you, you energize me, we grow together</h5>
     <p>Because different growers use different resources to energize, heat and cool their greenhouses, the highs and lows in energy can differ throughout the year.</p>
     <p>Greendr enables you to exchange your get insight in your own needs and in the needs of the peers around you. This enables you to contact them to establish a connection to benefit from each other.</p>
   </div>
