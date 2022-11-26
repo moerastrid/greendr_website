@@ -1,0 +1,11 @@
+<html>
+<body>
+    <?php
+       	include("header.php");
+	include("navbar.php");
+	include("form.php");
+	include("footer.php");
+	include("test.php");
+    ?>
+</body>
+</html>
