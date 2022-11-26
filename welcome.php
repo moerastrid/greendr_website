@@ -33,16 +33,43 @@
 		$servername = "localhost";
 		$username = "root";
 		$password = "empower";
-		$conn = new mysqli($servername, $username, $password);
+		$dbname = "GreendrDB";
+		$found = false;
+		$conn = new mysqli($servername, $username, $password, $dbname);
 		if ($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}
 		else
 		{
-			echo "Connected successfully";
+			echo "Connected successfully!<br><br>";
 		}
-		echo "Your account details are:";
-		
+		echo "Your user account details are:<br>";
+		$sql = "SELECT `userID`, `name`, `password`, `email`, `Description`, `Favorite`, `Profile picture` FROM users";
+		$result = $conn->query($sql);
+
+		if ($result->num_rows > 0) {
+			while($row = $result->fetch_assoc()) {
+				if (strcmp($row["name"], $_POST["name"]) == 0) {
+	 				echo "Name: " . $row["name"]. " - Email: " . $row["email"]. "<br>";
+					echo "Description: " . $row["Description"] . "<br>";
+					if ($row["Favorite"] == 1){
+						echo "You also love tomatoes. <br>";
+					} else {
+						echo "Why do you hate tomatoes? <br>";
+					}
+					$found = true;
+					break ;
+  				}
+			}
+			if ($found == false)
+			{	echo $_POST["name"] . " not found :( <br>";111
+			} else {
+				
+			}
+		} else {
+		  echo "0 results";
+		}
+		$conn->close();
 	 ?>
 	</p>
  </div>

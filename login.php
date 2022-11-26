@@ -1,11 +1,15 @@
 <html>
 <body>
-    <?php
+ <?php
        	include("header.php");
 	include("navbar.php");
+ ?>
+ <?php
 	include("form.php");
+ ?>
+ <?php
 	include("footer.php");
 	include("test.php");
-    ?>
+ ?>
 </body>
 </html>
