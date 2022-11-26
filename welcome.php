@@ -30,6 +30,8 @@
 	<h2>Welcome <?php echo $_POST["name"]; ?><br></h2>
 	<p>
 	 <?php
+		$first = 1;
+		$second = 1;
 		$servername = "localhost";
 		$username = "root";
 		$password = "empower";
@@ -44,34 +46,44 @@
 			echo "Connected successfully!<br><br>";
 		}
 		echo "Your user account details are:<br>";
-		$sql = "SELECT `userID`, `name`, `password`, `email`, `Description`, `Favorite`, `Profile picture` FROM users";
-		$result = $conn->query($sql);
+		$sqla = "SELECT `userID`, `name`, `password`, `email`, `Description`, `Favorite`, `Profile picture` FROM users";
+		$resulta = $conn->query($sqla);
 
-		if ($result->num_rows > 0) {
-			while($row = $result->fetch_assoc()) {
-				if (strcmp($row["name"], $_POST["name"]) == 0) {
-	 				echo "Name: " . $row["name"]. " - Email: " . $row["email"]. "<br>";
-					echo "Description: " . $row["Description"] . "<br>";
-					if ($row["Favorite"] == 1){
+		if ($resulta->num_rows > 0) {
+			while($rowa = $resulta->fetch_assoc()) {
+				if (strcmp($rowa["name"], $_POST["name"]) == 0) {
+	 				echo "Name: " . $rowa["name"]. " - Email: " . $rowa["email"]. "<br>";
+					echo "Description: " . $rowa["Description"] . "<br>";
+					if ($rowa["Favorite"] == 1){
 						echo "You also love tomatoes. <br>";
 					} else {
 						echo "Why do you hate tomatoes? <br>";
 					}
+					$a = $rowa["Favorite"];
 					$found = true;
 					break ;
   				}
 			}
-			if ($found == false)
-			{	echo $_POST["name"] . " not found :( <br>";111
+			if ($found == false) {
+				echo $_POST["name"] . " not found :( <br>";
 			} else {
-				
+				$sqlb = "SELECT `VegetableID`, `name`, `pic` FROM vegetable";
+        	        	$resultb = $conn->query($sqlb);
+                		if ($resultb->num_rows > 0) {
+					while ($rowb = $resultb->fetch_assoc()) {
+						if ($rowa["Favorite"] == $rowb["VegetableID"]){
+							$myimg = $rowb["pic"];
+							echo $rowb["name"];
+						}
+					}
+				} else {
+					echo "ohno";
+				}
 			}
-		} else {
-		  echo "0 results";
 		}
-		$conn->close();
 	 ?>
 	</p>
+	<img src="<?php echo $myimg; ?>" width="750" height="500">
  </div>
 	<?php
 		include ("footer.php");
