@@ -41,9 +41,9 @@
   </head>
   <body>
    <div class="navbar">
+        <a href="http://3.69.231.178/">Home</a>
         <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#" class="right">Link</a>
+        <a href="http://3.69.231.178/account.php/" class="right">account</a>
    </div>
  </body>
 </html>
