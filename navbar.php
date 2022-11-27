@@ -7,8 +7,10 @@
   <style>
      * {
 	box-sizing: border-box;
+	}
+   body {
 	font-family: Arial, Helvetica, sans-sarif;
-       }
+        }
    .dropbtn {
 	background-color: #333;
 	color: LightYellow;
@@ -22,7 +24,7 @@
    .drop-content {
 	display: none;
 	position: absolute;
-	background-color: DarkGreen;
+	background-color: SeaGreen;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 	}
@@ -45,11 +47,11 @@
        	 text-decoration: none;
        }
    .navbar a:hover {
-       	 background-color: LightYellow;
+       	 background-color: Gold;
        	 color: DarkGreen;
        }
    .dropdown:hover .drop-content {display: block;}
-   .dropdown:hover .dropbtn {background-color: LightYellow; color: DarkGreen;}
+   .dropdown:hover .dropbtn {background-color: Gold; color: DarkGreen;}
     @media screen and (max-width: 400px){
 	.row {
 		flex-direction: columb;
@@ -60,7 +62,7 @@
   <body>
    <div class="navbar">
         <a href="index.php">Home</a>
-	<a href="login.php">Login</a>
+	<a href="browse.php">Browse</a>
 	<div class="dropdown">
   	   <div class="dropbtn">MijnGreendr</div>
        	   <div class="drop-content">

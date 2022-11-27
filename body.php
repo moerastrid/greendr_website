@@ -7,6 +7,8 @@
   <style>
       * {
 	  box-sizing: border-box;
+	}
+   body {
           font-family: Arial, Helvetica, sans-sarif;
         }
    .row {
