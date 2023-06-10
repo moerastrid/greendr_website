@@ -5,6 +5,6 @@
   loading="lazy"
   allowfullscreen
   referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBORXGJ4TErl-3S5cDG5pb0sfNXoU9S8vg
+  src="https://www.google.com/maps/embed/v1/place?key=YOURKEY
     &q=Space+Needle,Seattle+WA">
 </iframe>
